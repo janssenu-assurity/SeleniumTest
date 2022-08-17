@@ -1,0 +1,405 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{DC64DD00-5AD4-4CC9-905F-8C18D7CC477B}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>SeleniumPractice</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitattributes" />
+    <None Include=".gitignore" />
+    <None Include=".git\COMMIT_EDITMSG" />
+    <None Include=".git\config" />
+    <None Include=".git\description" />
+    <None Include=".git\FETCH_HEAD" />
+    <None Include=".git\HEAD" />
+    <None Include=".git\hooks\applypatch-msg.sample" />
+    <None Include=".git\hooks\commit-msg.sample" />
+    <None Include=".git\hooks\fsmonitor-watchman.sample" />
+    <None Include=".git\hooks\post-update.sample" />
+    <None Include=".git\hooks\pre-applypatch.sample" />
+    <None Include=".git\hooks\pre-commit.sample" />
+    <None Include=".git\hooks\pre-merge-commit.sample" />
+    <None Include=".git\hooks\pre-push.sample" />
+    <None Include=".git\hooks\pre-rebase.sample" />
+    <None Include=".git\hooks\pre-receive.sample" />
+    <None Include=".git\hooks\prepare-commit-msg.sample" />
+    <None Include=".git\hooks\push-to-checkout.sample" />
+    <None Include=".git\hooks\update.sample" />
+    <None Include=".git\index" />
+    <None Include=".git\info\exclude" />
+    <None Include=".git\logs\HEAD" />
+    <None Include=".git\logs\refs\heads\master" />
+    <None Include=".git\logs\refs\remotes\origin\master" />
+    <None Include=".git\objects\01\f7d26253538d3260571b2ce0d5627ffd086671" />
+    <None Include=".git\objects\0c\62ab427941d027d3ca0e7893352c4033bc5cf2" />
+    <None Include=".git\objects\14\0339398ff7a3da944abccf54a221d3766aa899" />
+    <None Include=".git\objects\1e\322d9f0270f60cedcdc21e92251401520f5089" />
+    <None Include=".git\objects\1e\e16d81ddf3d5853a75d09e08ba17a50f2b6ab9" />
+    <None Include=".git\objects\1f\f0c423042b46cb1d617b81efb715defbe8054d" />
+    <None Include=".git\objects\29\d2e894f3f78e00035c2a35715a6a46f6bd5877" />
+    <None Include=".git\objects\2c\e83da0160abebd7996f1e66aa41075069b8d51" />
+    <None Include=".git\objects\35\12023d5488ce197483f7c567395ecdcb29a33c" />
+    <None Include=".git\objects\3a\1328b80d1bf0a23e49dc2bc2a89b59c69dc66c" />
+    <None Include=".git\objects\3f\47e4a18fac6ee4973cd76c3f1cffad163d0d79" />
+    <None Include=".git\objects\45\fc8ddd38c039bd3c78f2d990b32aaed5d7ccb0" />
+    <None Include=".git\objects\50\10bbc51be0d85b235c94cd6de7f2eb31b80b9f" />
+    <None Include=".git\objects\51\1c6aa3c3a86c667ce35a68950a007cf28f17d6" />
+    <None Include=".git\objects\53\28b0af8ed6c70c105ce61d51835c7f8a831657" />
+    <None Include=".git\objects\67\15653341f639f0d3b0baa5d95a16c813b08dc0" />
+    <None Include=".git\objects\67\75a846b5944697462517914190128ee3d7a1dc" />
+    <None Include=".git\objects\6a\b735109dd93b43b4cc5c8f395253df22dd20fc" />
+    <None Include=".git\objects\71\8717fa6604db0e75ec7a43a640fa9542d17e9e" />
+    <None Include=".git\objects\74\c80d59fd17875c5db4aa0f54aaa39dfa93290b" />
+    <None Include=".git\objects\76\d0d3647b88b3f160baa50e0d3e3d9f5f9124a6" />
+    <None Include=".git\objects\81\ae4c12d24ca90a5dc3ef3e6dc1607f6437c7b2" />
+    <None Include=".git\objects\86\2c1590b7e1e82d73471bce14788b482ee9abe6" />
+    <None Include=".git\objects\94\5e992b18c6874acd294e721023e6a12617053b" />
+    <None Include=".git\objects\94\91a2fda28342ab358eaf234e1afe0c07a53d62" />
+    <None Include=".git\objects\a0\350202395b41c013f215cd4346fc65f1be27ab" />
+    <None Include=".git\objects\aa\a51d592d63722ff12ed251208fcb9f241f6249" />
+    <None Include=".git\objects\aa\bf26c44070633c7020a984bb7210b09c965e8c" />
+    <None Include=".git\objects\ae\1a8e2a99538c3df86e0743a99d6ebd7bc25f42" />
+    <None Include=".git\objects\b0\2110b6896e2b0bd3a11bb802e4a8ea4106ef54" />
+    <None Include=".git\objects\b2\81abcb3c91cc138c16450eedf421bf6ba72dfd" />
+    <None Include=".git\objects\b3\5d84b9bdf00b6521b62358637abac7728b64e4" />
+    <None Include=".git\objects\b7\2a0368b0e83a49a5ad3c5abee2d40640b3c0ee" />
+    <None Include=".git\objects\be\677350c5e5804be75494426e4791516f9f85b4" />
+    <None Include=".git\objects\c8\128ed2dc79cd2fb01956c772b21c4b9f9413bf" />
+    <None Include=".git\objects\c9\ccee99fdf993fe668e6e30a3222c0fc9e090c6" />
+    <None Include=".git\objects\ce\fced496989c526cbcde61dc2100f20baa7634a" />
+    <None Include=".git\objects\d0\14b84bd053f13625fa29bfdb777548d8d03f17" />
+    <None Include=".git\objects\d4\9c6387b25c702e01e98258bb1ac0e7b6ae9a8c" />
+    <None Include=".git\objects\d9\60694bdae63cb6f58b3f8497a8872c05db2ab6" />
+    <None Include=".git\objects\d9\f6936906a37e2f63e73ae47e166a397374f85c" />
+    <None Include=".git\objects\e1\b2e525d549e61f39f57ed35cbc049bda1bb914" />
+    <None Include=".git\objects\ee\4bd967d765789bb96712fb85e8b8eb69af2558" />
+    <None Include=".git\objects\f0\d3a70ceaa69fb70811f58254dc738e0f939eac" />
+    <None Include=".git\refs\heads\master" />
+    <None Include=".git\refs\remotes\origin\master" />
+    <None Include=".vs\SeleniumPractice\v17\TestStore\0\000.testlog" />
+    <None Include=".vs\SeleniumPractice\v17\TestStore\0\testlog.manifest" />
+    <None Include="AutomationPracticeSpecflow\AutomationPracticeSpecflow.csproj" />
+    <None Include="AutomationPracticeSpecflow\bin\Debug\net6.0\AutomationPracticeSpecflow.deps.json" />
+    <None Include="AutomationPracticeSpecflow\bin\Debug\net6.0\AutomationPracticeSpecflow.runtimeconfig.json" />
+    <None Include="AutomationPracticeSpecflow\bin\Debug\net6.0\nunit_random_seed.tmp" />
+    <None Include="AutomationPracticeSpecflow\bin\Debug\net6.0\SeleniumTest.deps.json" />
+    <None Include="AutomationPracticeSpecflow\bin\Debug\net6.0\SeleniumTest.runtimeconfig.json" />
+    <None Include="AutomationPracticeSpecflow\bin\Debug\net6.0\TestExecution.json" />
+    <None Include="AutomationPracticeSpecflow\Features\AutomationPractice.feature" />
+    <None Include="AutomationPracticeSpecflow\obj\AutomationPracticeSpecflow.csproj.nuget.dgspec.json" />
+    <None Include="AutomationPracticeSpecflow\obj\AutomationPracticeSpecflow.csproj.nuget.g.props" />
+    <None Include="AutomationPracticeSpecflow\obj\AutomationPracticeSpecflow.csproj.nuget.g.targets" />
+    <None Include="AutomationPracticeSpecflow\obj\Debug\net6.0\AutomationPracticeSpecflow.AssemblyInfoInputs.cache" />
+    <None Include="AutomationPracticeSpecflow\obj\Debug\net6.0\AutomationPracticeSpecflow.assets.cache" />
+    <None Include="AutomationPracticeSpecflow\obj\Debug\net6.0\AutomationPracticeSpecflow.csproj.AssemblyReference.cache" />
+    <None Include="AutomationPracticeSpecflow\obj\Debug\net6.0\AutomationPracticeSpecflow.csproj.BuildWithSkipAnalyzers" />
+    <None Include="AutomationPracticeSpecflow\obj\Debug\net6.0\AutomationPracticeSpecflow.csproj.CopyComplete" />
+    <None Include="AutomationPracticeSpecflow\obj\Debug\net6.0\AutomationPracticeSpecflow.csproj.CoreCompileInputs.cache" />
+    <None Include="AutomationPracticeSpecflow\obj\Debug\net6.0\AutomationPracticeSpecflow.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="AutomationPracticeSpecflow\obj\Debug\net6.0\AutomationPracticeSpecflow.genruntimeconfig.cache" />
+    <None Include="AutomationPracticeSpecflow\obj\project.assets.json" />
+    <None Include="AutomationPracticeSpecflow\obj\project.nuget.cache" />
+    <None Include="README.md" />
+    <None Include="SeleniumTest\.gitattributes" />
+    <None Include="SeleniumTest\.gitignore" />
+    <None Include="SeleniumTest\bin\Debug\net6.0\nunit_random_seed.tmp" />
+    <None Include="SeleniumTest\bin\Debug\net6.0\SeleniumTest.deps.json" />
+    <None Include="SeleniumTest\bin\Debug\net6.0\SeleniumTest.runtimeconfig.json" />
+    <None Include="SeleniumTest\obj\Debug\net6.0\SeleniumTest.AssemblyInfoInputs.cache" />
+    <None Include="SeleniumTest\obj\Debug\net6.0\SeleniumTest.assets.cache" />
+    <None Include="SeleniumTest\obj\Debug\net6.0\SeleniumTest.csproj.AssemblyReference.cache" />
+    <None Include="SeleniumTest\obj\Debug\net6.0\SeleniumTest.csproj.BuildWithSkipAnalyzers" />
+    <None Include="SeleniumTest\obj\Debug\net6.0\SeleniumTest.csproj.CopyComplete" />
+    <None Include="SeleniumTest\obj\Debug\net6.0\SeleniumTest.csproj.CoreCompileInputs.cache" />
+    <None Include="SeleniumTest\obj\Debug\net6.0\SeleniumTest.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="SeleniumTest\obj\Debug\net6.0\SeleniumTest.genruntimeconfig.cache" />
+    <None Include="SeleniumTest\obj\project.assets.json" />
+    <None Include="SeleniumTest\obj\project.nuget.cache" />
+    <None Include="SeleniumTest\obj\SeleniumTest.csproj.nuget.dgspec.json" />
+    <None Include="SeleniumTest\obj\SeleniumTest.csproj.nuget.g.props" />
+    <None Include="SeleniumTest\obj\SeleniumTest.csproj.nuget.g.targets" />
+    <None Include="SeleniumTest\SeleniumTest.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".git\ms-persist.xml" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\AutomationPracticeSpecflow.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\AutomationPracticeSpecflow.pdb" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\BoDi.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\cs\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\cs\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\cs\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\cs\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\cs\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\de\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\de\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\de\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\de\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\de\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\es\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\es\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\es\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\es\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\es\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\FluentAssertions.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\fr\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\fr\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\fr\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\fr\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\fr\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\Gherkin.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\it\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\it\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\it\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\it\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\it\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\ja\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\ja\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\ja\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\ja\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\ja\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\ko\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\ko\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\ko\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\ko\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\ko\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\LivingDoc.Dtos.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\LivingDoc.SpecFlowPlugin.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\Microsoft.TestPlatform.CommunicationUtilities.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\Microsoft.TestPlatform.CoreUtilities.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\Microsoft.TestPlatform.CrossPlatEngine.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\Microsoft.TestPlatform.PlatformAbstractions.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\Microsoft.TestPlatform.Utilities.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.Common.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\Newtonsoft.Json.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\NuGet.Frameworks.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\nunit.engine.api.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\nunit.engine.core.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\nunit.engine.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\nunit.framework.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\NUnit3.TestAdapter.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\NUnit3.TestAdapter.pdb" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\pl\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\pl\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\pl\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\pl\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\pl\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\pt-BR\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\pt-BR\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\pt-BR\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\pt-BR\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\pt-BR\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\ru\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\ru\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\ru\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\ru\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\ru\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\SeleniumTest.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\SeleniumTest.pdb" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\SpecFlow.Internal.Json.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\System.Security.Permissions.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\TechTalk.SpecFlow.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\TechTalk.SpecFlow.NUnit.SpecFlowPlugin.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\testcentric.engine.metadata.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\testhost.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\testhost.exe" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\tr\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\tr\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\tr\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\tr\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\tr\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\WebDriver.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\WebDriver.Support.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\zh-Hans\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\zh-Hans\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\zh-Hans\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\zh-Hans\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\zh-Hans\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\zh-Hant\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\bin\Debug\net6.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <Content Include="AutomationPracticeSpecflow\Drivers\chromedriver.exe" />
+    <Content Include="AutomationPracticeSpecflow\obj\Debug\net6.0\AutomationPracticeSpecflow.csproj.FileListAbsolute.txt" />
+    <Content Include="AutomationPracticeSpecflow\obj\Debug\net6.0\AutomationPracticeSpecflow.dll" />
+    <Content Include="AutomationPracticeSpecflow\obj\Debug\net6.0\AutomationPracticeSpecflow.pdb" />
+    <Content Include="AutomationPracticeSpecflow\obj\Debug\net6.0\refint\AutomationPracticeSpecflow.dll" />
+    <Content Include="AutomationPracticeSpecflow\obj\Debug\net6.0\ref\AutomationPracticeSpecflow.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\BoDi.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\cs\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\cs\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\cs\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\cs\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\cs\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\de\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\de\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\de\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\de\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\de\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\es\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\es\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\es\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\es\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\es\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\fr\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\fr\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\fr\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\fr\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\fr\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\Gherkin.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\it\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\it\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\it\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\it\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\it\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\ja\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\ja\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\ja\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\ja\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\ja\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\ko\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\ko\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\ko\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\ko\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\ko\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\Microsoft.TestPlatform.CommunicationUtilities.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\Microsoft.TestPlatform.CoreUtilities.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\Microsoft.TestPlatform.CrossPlatEngine.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\Microsoft.TestPlatform.PlatformAbstractions.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\Microsoft.TestPlatform.Utilities.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.Common.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\Newtonsoft.Json.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\NuGet.Frameworks.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\nunit.engine.api.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\nunit.engine.core.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\nunit.engine.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\nunit.framework.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\NUnit3.TestAdapter.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\NUnit3.TestAdapter.pdb" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\pl\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\pl\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\pl\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\pl\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\pl\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\pt-BR\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\pt-BR\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\pt-BR\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\pt-BR\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\pt-BR\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\ru\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\ru\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\ru\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\ru\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\ru\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\SeleniumTest.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\SeleniumTest.pdb" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\SpecFlow.Internal.Json.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\System.Security.Permissions.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\TechTalk.SpecFlow.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\TechTalk.SpecFlow.NUnit.SpecFlowPlugin.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\testcentric.engine.metadata.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\testhost.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\testhost.exe" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\tr\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\tr\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\tr\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\tr\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\tr\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\WebDriver.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\WebDriver.Support.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\zh-Hans\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\zh-Hans\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\zh-Hans\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\zh-Hans\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\zh-Hans\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\zh-Hant\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <Content Include="SeleniumTest\bin\Debug\net6.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <Content Include="SeleniumTest\Drivers\chromedriver.exe" />
+    <Content Include="SeleniumTest\obj\Debug\net6.0\refint\SeleniumTest.dll" />
+    <Content Include="SeleniumTest\obj\Debug\net6.0\ref\SeleniumTest.dll" />
+    <Content Include="SeleniumTest\obj\Debug\net6.0\SeleniumTest.csproj.FileListAbsolute.txt" />
+    <Content Include="SeleniumTest\obj\Debug\net6.0\SeleniumTest.dll" />
+    <Content Include="SeleniumTest\obj\Debug\net6.0\SeleniumTest.pdb" />
+    <Content Include="SeleniumTest\SeleniumTest.sln" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutomationPracticeSpecflow\Features\AutomationPractice.feature.cs" />
+    <Compile Include="AutomationPracticeSpecflow\ImplicitUsings.cs" />
+    <Compile Include="AutomationPracticeSpecflow\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" />
+    <Compile Include="AutomationPracticeSpecflow\obj\Debug\net6.0\AutomationPracticeSpecflow.AssemblyInfo.cs" />
+    <Compile Include="AutomationPracticeSpecflow\obj\Debug\net6.0\AutomationPracticeSpecflow.GlobalUsings.g.cs" />
+    <Compile Include="AutomationPracticeSpecflow\obj\Debug\net6.0\NUnit.AssemblyHooks.cs" />
+    <Compile Include="AutomationPracticeSpecflow\StepDefinitions\AutomationPracticeStepDefinitions.cs" />
+    <Compile Include="SeleniumTest\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" />
+    <Compile Include="SeleniumTest\obj\Debug\net6.0\NUnit.AssemblyHooks.cs" />
+    <Compile Include="SeleniumTest\obj\Debug\net6.0\SeleniumTest.AssemblyInfo.cs" />
+    <Compile Include="SeleniumTest\obj\Debug\net6.0\SeleniumTest.GlobalUsings.g.cs" />
+    <Compile Include="SeleniumTest\Tests.cs" />
+    <Compile Include="SeleniumTest\Usings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\objects\info\" />
+    <Folder Include=".git\objects\pack\" />
+    <Folder Include=".git\refs\tags\" />
+    <Folder Include="AutomationPracticeSpecflow\Properties\PublishProfiles\" />
+    <Folder Include="AutomationPracticeSpecflow\Support\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
